@@ -10,5 +10,7 @@ import scrapy
 
 class GetimagesItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    url = scrapy.Field()
+    addID = scrapy.Field()
+    image_urls = scrapy.Field()
+    images = scrapy.Field()
