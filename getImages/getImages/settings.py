@@ -64,8 +64,7 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {'getImages.pipelines.GetimagesPipeline': 2,
-                'getImages.pipelines.StoreItemsPipeline' : 1}
+ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
